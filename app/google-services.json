@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "622427959269",
+    "project_id": "newappbank-5006b",
+    "storage_bucket": "newappbank-5006b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622427959269:android:2f6b6c9ca3e8192f0f090c",
+        "android_client_info": {
+          "package_name": "com.example.newappbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622427959269-av7bpkrm0i3usl6dk2kehfkuvmkjp9b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6Rad6Yivt9WYQnjZGHCxg0YOT-d-k62Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622427959269-av7bpkrm0i3usl6dk2kehfkuvmkjp9b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

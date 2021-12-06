@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#D9FAB2"
+    >
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="193dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:transitionName="logoImagenTra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txvGreenB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Bienvenido"
+        android:textColor="@color/black"
+        android:textSize="90px"
+        android:transitionName="textTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImg" />
+
+    <TextView
+        android:id="@+id/ContinuarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Inicia Sesion para continuar"
+        android:transitionName="inisiarSesionTra"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="326dp"
+        android:layout_height="271dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UsuarioTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="correo"
+            android:textColorHint="#8BC34A"
+            android:transitionName="emailTra">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="correo"
+                android:inputType="textEmailAddress"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contraseña1TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="#8BC34A"
+            app:passwordToggleEnabled="true"
+            android:transitionName="passTra">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5F6AE"
+                android:hint="contraseña"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/olvidasteContra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Olvidates tu contraseña"
+            android:textAlignment="textEnd"
+            android:textColor="#5C5C5C"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"
+            android:background="#8BC34A"
+            android:text="Inicio"
+            android:textColor="@color/black"
+            android:transitionName="inicioSignTra"
+            app:backgroundTint="#4CAF50"></com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nuevoUsuario"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:text="Eres nuevo? Registrate!"
+        android:textAlignment="center"
+        android:textColor="#595858"
+        android:textSize="20dp"
+        android:transitionName="newUserTra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
